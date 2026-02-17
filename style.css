@@ -54,18 +54,142 @@ body {
   margin: 0;
 }
 
-.odinLogo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: rgba(0, 0, 0, 0.5);
-  padding: 10px;
+.imageOdin {
+  width: 75px;
+  height: 100px;
 }
 
-.odinText {
-  font-family: "Norse", sans-serif;
-  font-size: 6em;
-  font-weight: bold;
+.photoBy {
+  position: relative;
   color: white;
+  bottom: 0;
+  text-align: center;
+}
+
+.photoBy a {
+  color: white;
+  text-decoration: underline;
+}
+
+.signup {
+  width: 65%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.signupHeader {
+  display: flex;
+  align-items: flex-end;
+  height: 30%;
+  background-color: rgba(168, 170, 172, 0.5);
+}
+
+.signupForm {
+  flex: 1;
+  background-color: #f0eeef;
+  box-shadow: 0px 5px 15px rgb(59, 59, 59);
+}
+
+.signupFooter {
+  display: flex;
+  flex-direction: column;
+  height: 30%;
+  background-color: rgba(168, 170, 172, 0.5);
+  padding-top: 20px;
+}
+
+.signupHeader,
+.signupForm,
+.signupFooter {
+  padding-left: 40px;
+}
+
+.signupHeaderText {
   margin: 0;
+  padding-bottom: 20px;
+  font-size: medium;
+  font-weight: bold;
+}
+
+
+.fieldset {
+  border-width: 0px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: stretch;
+  justify-content: flex-start;
+  padding: 0;
+  margin: 0;
+  gap: 50px;
+}
+
+.divInput {
+  display: flex;
+  flex-direction: column;
+  margin: 0px 0px 15px 0px;
+  padding: 0;
+}
+
+.divInput > label {
+  font-weight: bold;
+  font-size: small;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"],
+input[type="text"]:valid,
+input[type="email"]:valid,
+input[type="tel"]:valid,
+input[type="password"]:valid {
+  width: 200px;
+  border: 1px solid #e5e7eb;
+  border-radius: 4px;
+  padding: 4px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.signupFooter > button {
+  width: 200px;
+  padding: 10px;
+  margin: 0;
+  background-color: #282828;
+  color: #d5d5d5;
+  border-radius: 4px;
+  border-width: 0;
+  cursor: pointer;
+}
+
+.signupFooter > p {
+  color: #1d1d1d;
+}
+
+.signupFooter > p > a {
+  color: #1d1d1d;
+  text-decoration: underline;
 }
